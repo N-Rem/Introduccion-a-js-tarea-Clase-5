@@ -12,6 +12,13 @@ $botonBienvenida.onclick = function () {
     const $segundoNombre = document.querySelector("#segundoNombre").value;
     const $apellido = document.querySelector("#apellido").value;
     const $edad = document.querySelector("#edad").value;
+    if ($nombre == "" || $segundoNombre == "" || $apellido == "" || $edad == "") {
+        alert("Datos no completados");
+    }
+    else {
         document.querySelector("#informacionUsuario").innerHTML = `<p>Nombres: ${$nombre} ${$segundoNombre}</p> <p>Apellido: ${$apellido}</p> <p>Edad: ${$edad}</p>`;
         document.querySelector("#bienvenida").innerText = `Bienvenido ${$nombre}`;
+
+    }
 }
+
