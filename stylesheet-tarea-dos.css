@@ -1,0 +1,41 @@
+* {
+    text-align: center;
+}
+
+#informacionUsuario {
+    color: rgb(163, 64, 46);
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+#bienvenida {
+    color: rgb(147, 51, 35);
+    text-decoration: overline underline;
+    text-shadow: 1px 1px 2px rgb(202 89 69);
+    letter-spacing: 5px;
+}
+
+input {
+    background-color: rgb(249, 176, 163);
+    margin: 2px;
+    border: 2px solid rgb(156, 59, 42);
+    border-radius: 20px;
+    width: 50%;
+
+}
+
+#saludar {
+    margin: 10px;
+    background-color: rgb(255, 207, 198);
+    border: 2px solid rgb(156, 59, 42);
+    border-radius: 10px;
+}
+
+.contenedor {
+    border: 3px solid tomato;
+    border-radius: 10px;
+    margin: auto;
+    width: 50%;
+}
+
+
