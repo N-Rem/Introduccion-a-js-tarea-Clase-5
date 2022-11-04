@@ -8,16 +8,16 @@
 const $botonBienvenida = document.querySelector("#saludar");
 
 $botonBienvenida.onclick = function () {
-    const $nombre = document.querySelector("#primerNombre").value;
-    const $segundoNombre = document.querySelector("#segundoNombre").value;
-    const $apellido = document.querySelector("#apellido").value;
-    const $edad = document.querySelector("#edad").value;
     if ($nombre == "" || $segundoNombre == "" || $apellido == "" || $edad == "") {
+    const nombre = document.querySelector("#primer-nombre").value;
+    const segundoNombre = document.querySelector("#segundo-nombre").value;
+    const apellido = document.querySelector("#apellido").value;
+    const edad = document.querySelector("#edad").value;
         alert("Datos no completados");
     }
     else {
         document.querySelector("#informacionUsuario").innerHTML = `<p>Nombres: ${$nombre} ${$segundoNombre}</p> <p>Apellido: ${$apellido}</p> <p>Edad: ${$edad}</p>`;
-        document.querySelector("#bienvenida").innerText = `Bienvenido ${$nombre}`;
+        document.querySelector("#bienvenida").innerText = `Bienvenido ${nombre}`;
 
     }
 }
