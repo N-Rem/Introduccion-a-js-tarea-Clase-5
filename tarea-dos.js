@@ -8,11 +8,11 @@
 const $botonBienvenida = document.querySelector("#saludar");
 
 $botonBienvenida.onclick = function () {
-    if ($nombre == "" || $segundoNombre == "" || $apellido == "" || $edad == "") {
     const nombre = document.querySelector("#primer-nombre").value;
     const segundoNombre = document.querySelector("#segundo-nombre").value;
     const apellido = document.querySelector("#apellido").value;
     const edad = document.querySelector("#edad").value;
+    if (nombre === "" || segundoNombre === "" || apellido === "" || edad === "") {
         alert("Datos no completados");
     }
     else {
