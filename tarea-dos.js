@@ -16,7 +16,9 @@ $botonBienvenida.onclick = function () {
         alert("Datos no completados");
     }
     else {
-        document.querySelector("#informacionUsuario").innerHTML = `<p>Nombres: ${$nombre} ${$segundoNombre}</p> <p>Apellido: ${$apellido}</p> <p>Edad: ${$edad}</p>`;
+        document.querySelector("#informacion-usuario").innerText = `Nombres: ${nombre} ${segundoNombre} 
+        Apellido: ${apellido} 
+        Edad: ${edad}`;
         document.querySelector("#bienvenida").innerText = `Bienvenido ${nombre}`;
 
     }
