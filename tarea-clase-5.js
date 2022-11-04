@@ -4,11 +4,13 @@
 // en una caja de texto deshabilitada. --> <input type="text" disabled id="salario-mensual"/>
 
 let $botonCalcular = document.querySelector("#calcular");
+const $botonCalcular = document.querySelector("#calcular");
 
 $botonCalcular.onclick = function (){
     let $salarioAnual = Number(document.querySelector("#salarioAnual").value);
     let $salarioMensual = document.querySelector("#salarioMensual");
     let salarioMensual = $salarioAnual / 12;
+    const $salarioMensual = document.querySelector("#salario-mensual");
     const MESES_DEL_ANIO = 12
     let salarioMensual = salarioAnual / MESES_DEL_ANIO;
     return $salarioMensual.value=`Salario Mensual ${salarioMensual}`;
