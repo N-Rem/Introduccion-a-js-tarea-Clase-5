@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet-tarea-tres.css">
+    <title>Tarea numero tres</title>
+</head>
+
+<body>
+    <h1 class="titulo">Tarea Numero Tres</h1>
+    <h2 class="sub-titulo">Calcular tiempo del curso</h2>
+    <div class="contenedor">
+        <form onsubmit="return false">
+            <label for="numero-clases">Cantidad de Clases:</label>
+            <input type="number" name="numero-clases" id="numero-clases" min="1" max="25">
+            <button id="agregar-clases">Agregar clases</button>
+        </form>
+        <form onsubmit="return false">
+            <div id="formulario"></div>
+            <button id="calcular-tiempo-total">Calcular Tiempo Total</button>
+        </form>
+    </div>
+
+    <div id="contenedor-resultado">
+        <strong id="tiempo-total"></strong>
+    </div>
+
+    <script src="tarea-tres.js"></script>
+</body>
+
+</html>

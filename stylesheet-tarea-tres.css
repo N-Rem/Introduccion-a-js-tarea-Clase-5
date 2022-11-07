@@ -1,0 +1,81 @@
+:root {
+    --color--marron-pastel-obscuro: rgb(182, 159, 149);
+    --color--marron-pastel-claro: rgb(227, 213, 201);
+    --color--marron:rgb(92, 58, 43);
+    --color--marron--claro:rgb(255, 238, 205);
+    --color--marron--input:rgb(249, 238, 232);
+    --color--marron--input--focus:rgb(225,200,186);
+
+}
+
+* {
+    text-align: center;
+}
+body{
+    background-color:var(--color--marron--input);
+}
+
+.titulo {
+    color: var(--color--marron);
+    text-decoration: overline underline;
+}
+
+.sub-titulo {
+    color: var(--color--marron);
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+}
+.contenedor {
+    /* background-color: var(--color--marron--claro); */
+    border:2px solid var(--color--marron);
+    width: 40%;
+    margin:0 auto;
+    background-color: white;
+}
+.clase{
+    text-align:left;
+    margin:20px;
+}
+label {
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+input {
+    width: 40px;;
+    background-color: var(--color--marron--input);
+    margin:10px;
+}
+
+input:focus {
+    background-color: var(--color--marron--input--focus);
+
+}
+
+button {
+    width: 30%;
+    padding:2%;
+    margin:5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .5s ease all;
+    border:none;
+    background-color: var(--color--marron-pastel-obscuro);
+
+}
+
+button:hover{
+    background-color: var(--color--marron-pastel-claro);
+    border:3px solid var(--color--marron);
+}
+
+ .resultado-final {
+    margin:15px auto;
+    width:40%;
+    height:50px;
+    border:3px solid var(--color--marron);
+    background-color: var(--color--marron--claro);
+    padding-top:30px;
+    
+ }
