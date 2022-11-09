@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,26 @@
     <link rel="stylesheet" href="stylesheet-tarea-cuatro.css">
     <title>Tarea numero cuatro</title>
 </head>
+
 <body>
     <h1 class="titulo">Tarea Numero Cuatro</h1>
-    <form onsubmit="return false">
-    <label for="agregar-numero">Agrega un numero a la lista</label>
-    <input type="number" name="agregar-numero" id="agregar-numero">
-    <button id="boton-agregar-item" >Agregar item a la lista</button>
-</form>
-<h2 class="subtitulo">Lista ordenada</h2>
-<ol id="numeros"></ol>
-<button id="realizar-calculos"> Realizar Calculos</button>
-<h2 class="subtitulo">El promedio:</h2>
-<em id="promedio"></em>
+    <div class="contenedor">
+        <form onsubmit="return false">
+            <label for="agregar-numero">Agrega un numero a la lista</label>
+            <input type="number" name="agregar-numero" id="agregar-numero">
+            <button id="boton-agregar-item">Agregar item a la lista</button>
+        </form>
+    </div>
+    <div class="contenedor">
+        <h2 class="subtitulo">Lista ordenada</h2>
+        <ol id="numeros"></ol>
+    </div>
+    <button id="realizar-calculos"> Realizar Calculos</button>
 
-<h2 class="subtitulo">El menor:</h2>
+    <h2 class="subtitulo">El promedio:</h2>
+    <em id="promedio"></em>
+
+    <h2 class="subtitulo">El menor:</h2>
     <em id="numero-menor"></em>
 
     <h2 class="subtitulo">El mayor:</h2>
@@ -31,6 +38,6 @@
 
     <script src="tarea-cuatro.js"></script>
 </body>
-</html>
 
+</html>
 
